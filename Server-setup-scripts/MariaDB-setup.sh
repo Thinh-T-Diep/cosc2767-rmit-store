@@ -16,8 +16,8 @@ sudo systemctl enable mariadb
 sudo mysql
 
 # Create and give the privilege to the Apache server
-CREATE USER 'db_admin'@'3.82.232.0' IDENTIFIED BY 'rmit_password';
-GRANT ALL PRIVILEGES ON *.* TO 'db_admin'@'3.82.232.0';
+CREATE USER 'db_admin'@'3.82.191.129' IDENTIFIED BY 'rmit_password';
+GRANT ALL PRIVILEGES ON *.* TO 'db_admin'@'3.82.191.129';
 FLUSH PRIVILEGES;
 CREATE DATABASE rmit_store_db;
 USE rmit_store_db;
