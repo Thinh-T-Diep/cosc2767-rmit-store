@@ -14,7 +14,7 @@ sudo su -
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo amazon-linux-extras install -y java-openjdk11
-yum install -y jenkins 
-yum install -y git
-service jenkins start
+sudo yum install -y jenkins 
+sudo yum install -y git
+sudo service jenkins start
 cat /var/lib/jenkins/secrets/initialAdminPassword
